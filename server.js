@@ -47,6 +47,7 @@ const deletedId = parseInt(req.params.id);
 readFileAsync('./db/db.json', 'utf8')
 .then(function(data) {
     const notes = [].concat(JSON.parse(data));
+    console.log(notes)
     const newNotes = []
     for (let i = 0; i<notes.length; i++) {
         if(deletedId !==notes[i].id) {
@@ -56,9 +57,13 @@ readFileAsync('./db/db.json', 'utf8')
     return newNotes
 })
 .then(function(notes) {
-    writeFileAsync('./develop/db/db.json', JSON.stringify(notes))
+    writeFileAsync('./db/db.json', JSON.stringify(notes))
     res.send('Your notes have been saved');
 })
+.catch(function(err){
+console.log(err)
+})
+
 })
 
 //HTML routing//
