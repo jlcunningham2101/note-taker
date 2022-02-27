@@ -3,6 +3,8 @@ const express = require('express');
 const path = require('path');
 const fs = require('fs');
 const util = require('util');
+var uniqid = require('uniqid'); 
+
 
 //To manage asynchronous processes//
 const readFileAsync = util.promisify(fs.readFile);
@@ -31,7 +33,7 @@ app.post('/api/notes', function(req, res) {
     const note = req.body;
     readFileAsync('./db/db.json', 'utf8').then(function(data){
         const notes =[].concat(JSON.parse(data));
-        note.id = notes.length + 1
+        note.id = uniqid()
         notes.push(note);
         return notes
     })
