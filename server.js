@@ -65,18 +65,14 @@ readFileAsync('./db/db.json', 'utf8')
 .catch(function(err){
 console.log(err)
 })
-
 })
 
-//HTML routing//
+//HTML routing for notes//
 app.get('/notes', function(req,res) {
     res.sendFile(path.join(__dirname, './public/notes.html'));
 });
 
-//app.get('/', function(req,res) {
-//res.sendFile(path.join(__dirname, './develop/public/index.html'));
-//});
-
+//HTML routing for wildcard//
 app.get('*', function(req,res) {
     res.sendFile(path.join(__dirname, './public/index.html'));
 });
