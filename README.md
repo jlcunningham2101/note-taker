@@ -12,7 +12,7 @@
 
 ### Description
 
-This application allows users to write and save notes of their choice.
+This application allows small business owners to write and save notes of their choice to keep track of important taskwork.
 
 ### Features
 
@@ -74,6 +74,7 @@ https://github.com/jlcunningham2101/note-taker
 
 ### Contributor
 
+If there are questions and/or concerns about this application, then feel free to reach out using my contact details below:
 Name: Jill Cunningham
 Email: jleighcunningham@gmail.com
 GitHub URL: https://github.com/jlcunningham2101
