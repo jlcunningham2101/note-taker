@@ -22,6 +22,7 @@ This application was built with the following features:
 - CSS
 - Javascript
 - Express.js
+- Uniqid (Npm package)
 
 ### User Story
 
@@ -65,6 +66,14 @@ The following steps will assist with user access to this application:
 4. To delete a note, click the red trash can icon associated with the note you'd like to remove.
 
 ### Webpage Screenshots
+
+Image of the notetaker homepage:
+![Screenshot](<assets/images/Screenshot%20(17).png>)
+
+Image of how users can create a note:
+![Screenshot](<assets/images/Screenshot%20(18).png>)
+
+Image of completed notes:
 
 ### GitHub URL
 
