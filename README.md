@@ -82,8 +82,6 @@ Image of how users can create a note:
 https://jlcunningham2101.github.io/note-taker/
 https://github.com/jlcunningham2101/note-taker
 
-### Deployed Heroku Link
-
 ### Contributor
 
 If there are questions and/or concerns about this application, then feel free to reach out using my contact details below:
